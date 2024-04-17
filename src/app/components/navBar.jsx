@@ -16,16 +16,16 @@ const navListOfLinks = [
     },
     {
         title: "Contact",
-        path: "#path"
+        path: "#contact"
     }
 ]
 
 const NavBar = () => {
     const [navBarOpen, setNavBarOpen] = useState(false)
     return (
-        <nav className='fixed top-0 left-0 mx-auto border border-primary-700 right-0 z-10 bg-[#121212] bg-opacity-100'>
+        <nav className='fixed top-0 left-0 mx-auto border-b border-b-primary-700 right-0 z-10 bg-[#121212] bg-opacity-100'>
             <div className='flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2'>
-                <Link href={"/"} className='text-white text-2xl md:text-3xl font-semibold'>LOGO</Link>
+                <Link href={"/"} className='text-white text-2xl md:text-3xl font-semibold'>JM.Dev</Link>
                 <div className='mobile-menu block md:hidden'>
                     {
                         !navBarOpen ? (<button onClick={() => setNavBarOpen(true)} className='flex items-center px-3 py-2 border rounded border-x-slate-200 text-slate-200 hover:text-white hover: border-white'><Bars3Icon className='w-5 h-5'/></button>) : 

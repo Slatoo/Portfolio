@@ -3,8 +3,12 @@ import React from 'react'
 import Image from 'next/image'
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from "framer-motion";
+import Link from 'next/link';
+
+//"C:\Users\josem\OneDrive\Documents\work\practicas de prog\portfoliojm\portfoliojm\public\docs\JMCV.pdf"
 
 const HeroSection = () => {
+
     return (
         <section className='lg:py-16'>
             <div className='grid grid-cols-1 lg:grid-cols-12'
@@ -36,12 +40,19 @@ const HeroSection = () => {
                         />
                     </h1>
                     <p className='text-[#ADB7BE] mb-6 text-base sm:text-lg lg:text-xl'>
-                        Lorem sd dolor sit amet consectetur adipisicing elit.
+                        First solve the problem. Then write the code...<em>--John Johnson</em>
                     </p>
                     <div>
                         <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-400 via-primary-500 to-primary-600 hover:bg-slate-300 text-white'>Hire me </button>
                         <button className='px-1  py-1 w-full sm:w-fit rounded-full mt-3 bg-gradient-to-br from-primary-400 via-primary-500 to-primary-600 hover:bg-slate-800 text-white'>
-                            <span className='block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2'>Download CV</span>
+                            <a
+                                className='block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2'
+                                href="/JMCV.pdf"
+                                download
+
+                            >
+                                Download CV
+                            </a>
                         </button>
                     </div>
                 </motion.div>
